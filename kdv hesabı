@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+     Scanner input=new Scanner(System.in);
+
+     double tutar,kdvOrani=0.18,kdvliTutar,kdvTutari;
+
+     System.out.print("Bir tutar giriniz: ");
+     tutar=input.nextDouble();
+
+     kdvTutari=kdvOrani*tutar;
+     kdvliTutar=kdvTutari+tutar;
+
+     System.out.println("Tutarınız: "+tutar);
+     System.out.println("Kdv Oranınız :  "+kdvOrani);
+     System.out.println("Kdv Tutarınız : "+kdvTutari);
+     System.out.println("Kdv li Tutarınız: "+kdvliTutar);
